@@ -46,5 +46,54 @@ Platform SaaS multi-tenant untuk digitalisasi menu restoran, pesanan via QR Code
 Clone repository
 
 ```bash
-git clone [https://github.com/username/pesanmakan.git](https://github.com/username/pesanmakan.git)
-cd pesanmakan
+git clone https://github.com/username/repository-name.git
+cd repository-name
+```
+
+Install dependency
+
+```bash
+composer install
+```
+
+Copy file environment
+
+```bash
+cp .env.example .env
+```
+
+Generate application key
+
+```bash
+php artisan key:generate
+```
+
+Configure database pada file `.env`, kemudian jalankan:
+
+```bash
+php artisan migrate --seed
+```
+
+Buat symbolic link
+
+```bash
+php artisan storage:link
+```
+
+Jalankan aplikasi
+
+```bash
+php artisan serve
+```
+
+Akses melalui
+
+```
+http://127.0.0.1:8000
+```
+
+Admin Panel
+
+```
+http://127.0.0.1:8000/admin
+```
