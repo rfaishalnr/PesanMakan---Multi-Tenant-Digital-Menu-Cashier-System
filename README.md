@@ -29,7 +29,7 @@ Platform SaaS multi-tenant untuk digitalisasi menu restoran, pesanan via QR Code
 ## Tech Stack
 
 - Laravel
-- PHP 8.2
+- PHP 8.4
 - Filament
 - Livewire
 - MySQL
